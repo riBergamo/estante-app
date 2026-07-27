@@ -3,7 +3,7 @@
 Estante App é um site simples para organizar obras como livros, mangás, filmes, séries, animes e jogos.  
 O projeto permite cadastrar obras, adicionar capa, descrição, status e progresso.
 
-<div align="center"> <img src="estante-app/images/imagem-pagina.png" width="70%"> </div>
+<div align="center"> <img src="./images/imagem-pagina.png" width="70%"> </div>
 
 
 ## Funcionalidades
