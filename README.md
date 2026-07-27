@@ -14,7 +14,7 @@ O projeto permite cadastrar obras, adicionar capa, descrição, status e progres
 - Adicionar imagem de capa
 - Filtrar por tipo
 - Filtrar por status
-- Buscar por tÃ­tulo, descriÃ§Ã£o ou progresso
+- Buscar por tí­tulo, descrição ou progresso
 - Salvar os dados no navegador com `localStorage`
 
 ## Tecnologias
@@ -50,7 +50,7 @@ Open with Live Server
 
 ## Como Editar O Código
 
-O arquivo principal para editar Ã©:
+O arquivo principal para editar é:
 
 ```text
 app.ts
@@ -82,7 +82,7 @@ Para compilar automaticamente enquanto edita:
 npm run watch
 ```
 
-Assim, sempre que vocÃª salvar o `app.ts`, o TypeScript tenta atualizar o `dist/app.js`.
+Assim, sempre que você salvar o `app.ts`, o TypeScript tenta atualizar o `dist/app.js`.
 
 ## Scripts
 
