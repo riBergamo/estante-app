@@ -1,7 +1,7 @@
 ﻿# Estante App
 
-Estante App Ã© um site simples para organizar obras como livros, mangÃ¡s, filmes, sÃ©ries, animes e jogos.  
-O projeto permite cadastrar obras, adicionar capa, descriÃ§Ã£o, status e progresso.
+Estante App é um site simples para organizar obras como livros, mangás, filmes, séries, animes e jogos.  
+O projeto permite cadastrar obras, adicionar capa, descrição, status e progresso.
 
 ## Funcionalidades
 
@@ -45,7 +45,7 @@ Se vocÃª estiver usando uma extensÃ£o como Live Server no VS Code, tambÃ©m
 Open with Live Server
 ```
 
-## Como Editar O CÃ³digo
+## Como Editar O Código
 
 O arquivo principal para editar Ã©:
 
@@ -93,26 +93,26 @@ Compila o TypeScript uma vez.
 npm run watch
 ```
 
-Compila automaticamente enquanto vocÃª desenvolve.
+Compila automaticamente enquanto você desenvolve.
 
 ## Dados Salvos
 
-As obras sÃ£o salvas no navegador usando `localStorage`, com a chave:
+As obras são salvas no navegador usando `localStorage`, com a chave:
 
 ```text
 estante-works-v1
 ```
 
-Isso significa que os dados ficam salvos no navegador atual. Se vocÃª abrir em outro navegador ou limpar os dados do site, a biblioteca pode aparecer vazia.
+Isso significa que os dados ficam salvos no navegador atual. Se você abrir em outro navegador ou limpar os dados do site, a biblioteca pode aparecer vazia.
 
 ## Tipos De Obra
 
 O app suporta:
 
 - Livro
-- MangÃ¡
+- Mangás
 - Filme
-- SÃ©rie
+- Série
 - Anime
 - Jogo
 - Outro
@@ -130,20 +130,20 @@ O app suporta:
 
 Este projeto foi criado para praticar:
 
-- manipulaÃ§Ã£o do DOM
-- formulÃ¡rios
+- manipulação do domínio
+- formulários
 - listas
 - filtros
 - armazenamento local
-- TypeScript bÃ¡sico
-- organizaÃ§Ã£o de dados com tipos
+- TypeScript
+- organização de dados com tipos
 
-## PrÃ³ximas Melhorias PossÃ­veis
+## Próximas Melhorias PossÃ­veis
 
 - Criar tela de detalhes separada
 - Adicionar favoritos
 - Melhorar progresso por tipo de obra
-- Criar coleÃ§Ãµes/listas personalizadas
+- Criar coleçoes/listas personalizadas
 - Melhorar responsividade mobile
-- Adicionar exportaÃ§Ã£o/importaÃ§Ã£o de dados
+- Adicionar exportação/importação de dados
 - Migrar para React ou React Native futuramente
