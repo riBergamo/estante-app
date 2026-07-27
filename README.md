@@ -3,6 +3,9 @@
 Estante App é um site simples para organizar obras como livros, mangás, filmes, séries, animes e jogos.  
 O projeto permite cadastrar obras, adicionar capa, descrição, status e progresso.
 
+<div align="center"> <img src="estante-app/images/imagem-pagina.png" width="70%"> </div>
+
+
 ## Funcionalidades
 
 - Cadastrar uma nova obra
@@ -39,7 +42,7 @@ estante-app/
 
 Abra o arquivo `index.html` no navegador.
 
-Se vocÃª estiver usando uma extensÃ£o como Live Server no VS Code, tambÃ©m pode clicar com o botÃ£o direito no `index.html` e escolher:
+Se você estiver usando uma extensão como Live Server no VS Code, também pode clicar com o botão direito no `index.html` e escolher:
 
 ```text
 Open with Live Server
