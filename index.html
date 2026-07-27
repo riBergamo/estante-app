@@ -1,0 +1,140 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estante</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <h1>Estante</h1>
+          <p>Sua biblioteca de obras em andamento, guardadas do seu jeito.</p>
+        </div>
+        <button class="primary-button" id="addWorkButton" type="button">Adicionar obra</button>
+      </header>
+
+      <main>
+        <section class="controls" aria-label="Filtros da biblioteca">
+          <label class="search-field">
+            <span>Buscar</span>
+            <input id="searchInput" type="search" placeholder="Título, descrição ou progresso" />
+          </label>
+
+          <label>
+            <span>Tipo</span>
+            <select id="typeFilter">
+              <option value="all">Todos</option>
+              <option value="book">Livro</option>
+              <option value="manga">Mangá</option>
+              <option value="movie">Filme</option>
+              <option value="series">Série</option>
+              <option value="anime">Anime</option>
+              <option value="game">Jogo</option>
+              <option value="other">Outro</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Status</span>
+            <select id="statusFilter">
+              <option value="all">Todos</option>
+              <option value="planned">Quero ver/ler</option>
+              <option value="in_progress">Em andamento</option>
+              <option value="paused">Pausado</option>
+              <option value="completed">Finalizado</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="library-header">
+          <h2>Biblioteca</h2>
+          <p id="workCount">0 obras</p>
+        </section>
+
+        <section class="library-grid" id="libraryGrid" aria-live="polite"></section>
+
+        <section class="empty-state" id="emptyState">
+          <h2>Nenhuma obra por aqui ainda.</h2>
+          <p>Adicione uma capa, escreva uma descrição curta e marque onde você parou.</p>
+          <button class="primary-button" id="emptyAddButton" type="button">Adicionar primeira obra</button>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="work-dialog" id="workDialog">
+      <form method="dialog" class="work-form" id="workForm">
+        <div class="dialog-header">
+          <div>
+            <h2 id="dialogTitle">Adicionar obra</h2>
+            <p>Guarde o básico agora. Dá para lapidar depois.</p>
+          </div>
+          <button class="icon-button" id="closeDialogButton" type="button" aria-label="Fechar">×</button>
+        </div>
+
+        <input id="workId" type="hidden" />
+
+        <label>
+          <span>Título</span>
+          <input id="titleInput" type="text" required maxlength="90" placeholder="Ex: Vagabond" />
+        </label>
+
+        <div class="form-row">
+          <label>
+            <span>Tipo</span>
+            <select id="typeInput" required>
+              <option value="book">Livro</option>
+              <option value="manga">Mangá</option>
+              <option value="movie">Filme</option>
+              <option value="series">Série</option>
+              <option value="anime">Anime</option>
+              <option value="game">Jogo</option>
+              <option value="other">Outro</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Status</span>
+            <select id="statusInput" required>
+              <option value="planned">Quero ver/ler</option>
+              <option value="in_progress">Em andamento</option>
+              <option value="paused">Pausado</option>
+              <option value="completed">Finalizado</option>
+            </select>
+          </label>
+        </div>
+
+        <label>
+          <span>Imagem da obra</span>
+          <input id="imageInput" type="file" accept="image/*" />
+        </label>
+
+        <div class="image-preview" id="imagePreview">
+          <span>Prévia da capa</span>
+        </div>
+
+        <label>
+          <span>Descrição breve</span>
+          <textarea id="descriptionInput" maxlength="280" rows="4" placeholder="Uma frase ou duas sobre a obra."></textarea>
+        </label>
+
+        <label>
+          <span>Onde você está</span>
+          <input id="progressInput" type="text" maxlength="60" placeholder="Ex: página 124, cap. 18, episódio 6" />
+        </label>
+
+        <div class="form-actions">
+          <button class="danger-button" id="deleteButton" type="button">Remover</button>
+          <div>
+            <button class="secondary-button" id="cancelButton" type="button">Cancelar</button>
+            <button class="primary-button" type="submit">Salvar</button>
+          </div>
+        </div>
+      </form>
+    </dialog>
+
+    <script src="dist/app.js"></script>
+  </body>
+</html>
